@@ -1,0 +1,22 @@
+#\u7AEF\u53E3\u53CA\u5DE5\u7A0B\u8DEF\u5F84
+server:
+  port: 8888
+  servlet:
+    context-path: /mybatis
+#  \u6570\u636E\u5E93\u914D\u7F6E
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3366/ceshi?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#mybatis\u914D\u7F6E
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zs.modle
+
+#\u6253\u5370\u65E5\u5FD7
+logging:
+  level:
+    com.zs.mapper: debug
